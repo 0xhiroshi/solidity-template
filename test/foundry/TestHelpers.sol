@@ -9,6 +9,7 @@ abstract contract TestHelpers is AssertionHelpers {
     address public user3 = address(13);
     address public user4 = address(14);
     address public owner = address(69);
+    address public protocolFeeRecipient = address(420);
 
     modifier asPrankedUser(address user) {
         vm.startPrank(user);
